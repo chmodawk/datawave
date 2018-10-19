@@ -9,8 +9,8 @@ import java.util.List;
 
 import datawave.util.ObjectFactory;
 
-import org.apache.lucene.analysis.util.CharArraySet;
-import org.apache.lucene.analysis.util.WordlistLoader;
+import org.apache.lucene.analysis.CharArraySet;
+import org.apache.lucene.analysis.WordlistLoader;
 import org.apache.lucene.util.IOUtils;
 import org.apache.lucene.util.Version;
 import org.slf4j.Logger;

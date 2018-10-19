@@ -24,6 +24,7 @@ import java.util.Map;
 
 import datawave.util.ObjectFactory;
 
+import org.apache.lucene.util.AttributeFactory;
 import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;

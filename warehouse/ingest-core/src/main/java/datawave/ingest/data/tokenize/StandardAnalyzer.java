@@ -8,8 +8,8 @@ import org.apache.lucene.analysis.core.LowerCaseFilter;
 import org.apache.lucene.analysis.core.StopAnalyzer;
 import org.apache.lucene.analysis.core.StopFilter;
 import org.apache.lucene.analysis.standard.StandardFilter;
-import org.apache.lucene.analysis.util.CharArraySet;
-import org.apache.lucene.analysis.util.StopwordAnalyzerBase;
+import org.apache.lucene.analysis.CharArraySet;
+import org.apache.lucene.analysis.StopwordAnalyzerBase;
 import org.apache.lucene.util.Version;
 
 /**
