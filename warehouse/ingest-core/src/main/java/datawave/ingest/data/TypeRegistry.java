@@ -70,7 +70,11 @@ public class TypeRegistry extends HashMap<String,Type> {
         return registry;
     }
     
-    /** Helps determine whether or not the registry instance has been instantiated. */
+    /**
+     * Helps determine whether or not the registry instance has been instantiated.
+     * 
+     * @return true iff registry != null
+     */
     public static boolean hasInstance() {
         return registry != null;
     }

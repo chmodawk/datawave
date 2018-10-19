@@ -170,6 +170,7 @@ public class RawRecordContainerImpl implements Writable, Configurable, RawRecord
      * Sets the Type for this raw record container.
      * 
      * @param dataType
+     *            Type instance describing the data type
      * @see Type
      */
     @Override
@@ -306,6 +307,7 @@ public class RawRecordContainerImpl implements Writable, Configurable, RawRecord
      * Stores the name of the raw file that this event came from.
      * 
      * @param rawFileName
+     *            the file name
      */
     @Override
     public void setRawFileName(String rawFileName) {
@@ -315,7 +317,7 @@ public class RawRecordContainerImpl implements Writable, Configurable, RawRecord
     /**
      * Get the raw record number
      * 
-     * @return
+     * @return number/position of this record within the raw data file
      */
     @Override
     public long getRawRecordNumber() {
@@ -326,6 +328,7 @@ public class RawRecordContainerImpl implements Writable, Configurable, RawRecord
      * Stores the record number in the raw file that this raw record container came from.
      * 
      * @param rawRecordNumber
+     *            number/position of this record within the raw data file
      */
     @Override
     public void setRawRecordNumber(long rawRecordNumber) {
@@ -345,6 +348,7 @@ public class RawRecordContainerImpl implements Writable, Configurable, RawRecord
      * Stores the timestamp of the raw input file that this raw record container came from.
      * 
      * @param rawRecordTimestamp
+     *            timestamp of the file
      */
     @Override
     public void setRawFileTimestamp(long rawRecordTimestamp) {
@@ -422,6 +426,7 @@ public class RawRecordContainerImpl implements Writable, Configurable, RawRecord
      * Copy this RawRecordConatiner into another RawRecordContainer
      * 
      * @param rrci
+     *            target instance to receive this instance's state
      * @return e
      */
     protected RawRecordContainerImpl copyInto(RawRecordContainerImpl rrci) {
@@ -447,6 +452,7 @@ public class RawRecordContainerImpl implements Writable, Configurable, RawRecord
      * Since the configuration has already been loaded, there is no need to re-load it. We can simply copy the built objects
      * 
      * @param rrci
+     *            target instance to receive this instance's config state
      */
     private void copyConfiguration(RawRecordContainerImpl rrci) {
         rrci.conf = conf;

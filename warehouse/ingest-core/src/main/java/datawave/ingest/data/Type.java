@@ -99,6 +99,11 @@ public class Type implements Comparable<Type> {
     
     /**
      * @deprecated
+     *
+     * @param conf
+     *            Configuration instance to use for setup
+     * @return initialized helper instance
+     *
      */
     public IngestHelperInterface newIngestHelper(Configuration conf) {
         IngestHelperInterface helper = newIngestHelper();
@@ -112,6 +117,7 @@ public class Type implements Comparable<Type> {
     
     /**
      * @deprecated
+     * @return helper instance
      */
     public IngestHelperInterface newIngestHelper() {
         IngestHelperInterface helper = null;
